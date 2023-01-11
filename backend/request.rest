@@ -1,0 +1,59 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "asfdasf"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/63b4d58ad5e210f86a076e2e
+
+###
+DELETE http://localhost:3000/api/services/63bddc61a548b4589c0a67db
+
+###
+PUT  http://localhost:3000/api/services/63bc8990dbb30a764f5f394d
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "asfdasf"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Lucas",
+    "description": "Uma festa muito maneira para comemorar minha vaga como Dev Jr",
+    "budget": 2800,
+    "image": "Finge que tem uma imagem legal aqui",
+    "services": [{
+        "name": "Algum serviço",
+        "description": "Alguma descrição",
+        "price": 1400,
+        "image": "asfdasf"
+    },
+    {
+        "name": "Algum serviço 2",
+        "description": "Alguma descrição",
+        "price": 1400,
+        "image": "asfdasf"
+    }]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+DELETE  http://localhost:3000/api/parties/63bddbc3f2f512ae5cb65ffc
